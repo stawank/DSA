@@ -4,5 +4,5 @@
 int main (){
     std::cout<<"Hi"<<std::endl;
 
-    return 0
+    return 0;
 }
