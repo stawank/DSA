@@ -18,25 +18,9 @@ void printArr( int arr[], int size) {
 }
 
 int returnUnique(int ipArr[], int size){
-    int unique ;
- 
-    int count [11] = {0};
-    for(int i =0; i < size; i+= 1){
-        for (int j = 0; j < size; j+=1){
-            if (ipArr[i]==ipArr[j]){
-                count[i] += 1;
-            }
-            
-        }
-    }
-
-    printArr(ipArr, size);
-    printArr(count, size);
-
-    for (int j =0; j < size; j+= 1){
-        if(count[j]==1){
-            unique =  j;
-        }
+    int unique = 0;
+    for (int i = 0; i < size; i += 1){
+        unique = unique ^ ipArr[i];
     }
     return unique;
 }
