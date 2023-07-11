@@ -22,8 +22,8 @@ bool isUniqueOccurance (int arr[], int size) {
 
 int main(){
 
-    int arr[6] = { 1,2,3,2,1, 3};
-    int size = 6;
+    int arr[7] = { 1,2,3,2,1, 3, 5};
+    int size = 7;
     cout<< "\n" <<isUniqueOccurance(arr, size)<< endl;
 
     return 0;
