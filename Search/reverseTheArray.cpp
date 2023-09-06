@@ -3,12 +3,17 @@ using namespace std;
 
 
 
+
+
+
 void swapArray(int arr[], int size){
     int left = 0;
     int right = size -1;
 
     while(left <= right){
-        swap(arr[left], arr[right]);
+        int num3 = arr[left];
+        arr[left] = arr[right];
+        arr[right] = num3;
 
         left++;
         right--;
@@ -23,6 +28,8 @@ void swapArray(int arr[], int size){
 
 
 int main(){
+
+    
 
 
     int arr[5] = {1,2,3,4,5};
