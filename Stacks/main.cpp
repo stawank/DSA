@@ -39,7 +39,11 @@ stackOFInts.top()
 - You can access only top
 - You cannot print a stack
 
+=====================================================
+                Interview Tips
+=====================================================
 
+- If we want something in reversed order as input -> Use stacks
 */
 
 template< class T>
